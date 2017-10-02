@@ -6,12 +6,18 @@ class BaseLayout extends Component {
     return (
       <div>
         <nav>
-          <NavLink exact to="/">
+          <NavLink className="pollyBlog" exact to="/">
             Polly Blog
           </NavLink>
-          <NavLink to="/createpost">Create Post</NavLink>
-          <NavLink to="/postlist">Show All Posts</NavLink>
+          <NavLink className="aNav" to="/createpost">
+            Create Post
+          </NavLink>
+          <NavLink className="aNav" to="/postlist">
+            Show All Posts
+          </NavLink>
         </nav>
+
+        {this.props.children}
       </div>
     )
   }

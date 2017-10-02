@@ -8,12 +8,13 @@ import BaseLayout from "./components/BaseLayout"
 import CreatePost from "./components/CreatePost"
 import PostList from "./components/PostList"
 import ShowPost from "./components/ShowPost"
+import Home from "./components/Home"
 
 ReactDOM.render(
   <BrowserRouter>
     <App>
       <BaseLayout>
-        <Route exact path="/" component={BaseLayout} />
+        <Route exact path="/" component={Home} />
         <Route path="/createpost" component={CreatePost} />
         <Route path="/postlist" component={PostList} />
         <Route path="/showpost/:id" component={ShowPost} />

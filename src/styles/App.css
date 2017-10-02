@@ -1,5 +1,91 @@
 nav {
   display: flex;
   justify-content: space-around;
+  padding: 50px;
+  background-color: #9191fb;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.active {
+  color: red;
+  text-decoration: none;
+}
+
+.pollyBlog {
+  font-family: 'Lobster', cursive;
+}
+
+.aNav {
+  font-size: 30px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  border: 1px solid black;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 165px;
+  margin-right: 165px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background-color: red;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1490004047268-5259045aa2b4?dpr=1&auto=compress,format&fit=crop&w=3160&h=&q=80&cs=tinysrgb&crop=");
+  background-size: cover;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+.link {
+  color: black;
+  text-decoration: underline;
+}
+
+.pollyBlog {
+  font-size: 65px;
+}
+
+.homeImg {
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1500444974567-9f77135bd688?dpr=1&auto=compress,format&fit=crop&w=3116&h=&q=80&cs=tinysrgb&crop=");
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.welcome {
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  color: red;
+  opacity: 0.8;
+  font-size: 150px;
+}
+
+.insideForm {
+  display: flex;
+  align-items: center;
+  background-color: white;
   padding: 20px;
+  border: 1px solid black;
+}
+
+.inputMargin {
+  margin-top: 10px;
+}
+
+.line {
+  border-bottom: 1px solid black;
+}
+
+.postDiv {
+  margin-left: 20px;
 }
