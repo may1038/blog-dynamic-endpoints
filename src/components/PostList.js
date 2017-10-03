@@ -23,26 +23,29 @@ class PostList extends Component {
   render() {
     const posts = this.state.postList.map(post => {
       return (
-        <div className="postDiv" key={post._id}>
-          <h3>
-            {post.authorsName}
-          </h3>
-          <Link className="link" to={`showpost/${post._id}`}>
-            <h3>
-              {post.title}
-            </h3>
-          </Link>
-          <div className="line">
-            <h3>
-              {post.blog}
-            </h3>
+        <div className="wrapper">
+          <div className="postDivSmallWrapper">
+            <div className="postDiv" key={post._id}>
+              <label className="postListMargin">Author:</label>
+              <h2>
+                {post.authorsName}
+              </h2>
+              <label className="postListMargin">Title:</label>
+              <Link className="link" to={`showpost/${post._id}`}>
+                <h2>
+                  {post.title}
+                </h2>
+              </Link>
+            </div>
           </div>
         </div>
       )
     })
     return (
-      <div>
-        {posts}
+      <div className="postDivWrapper">
+        <div>
+          {posts}
+        </div>
       </div>
     )
   }

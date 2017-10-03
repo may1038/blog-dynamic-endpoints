@@ -22,14 +22,22 @@ class ShowPosts extends Component {
   render() {
     return (
       <div className="showPost">
-        <div>
-          {this.state.postItem.authorsName}
+        <div className="postItemTitle">
+          <div>
+            {this.state.postItem.title}
+          </div>
         </div>
-        <div>
-          {this.state.postItem.title}
+        <div className="postItem">
+          <div className="postItemBlog">
+            <div>
+              {this.state.postItem.blog}
+            </div>
+          </div>
         </div>
-        <div>
-          {this.state.postItem.blog}
+        <div className="postItemName">
+          <div>
+            - {this.state.postItem.authorsName}
+          </div>
         </div>
       </div>
     )

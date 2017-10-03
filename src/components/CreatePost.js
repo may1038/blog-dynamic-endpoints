@@ -58,9 +58,11 @@ class CreatePosts extends Component {
       <div className="form">
         <div className="insideForm">
           <form onSubmit={this.addToList} action="">
+            <h3>Post</h3>
             <label>Authors Name:</label>
             <div className="inputMargin">
               <input
+                className="inputSize"
                 type="text"
                 value={this.state.authorsName}
                 onChange={this.handleAuthorsNameChange}
@@ -69,6 +71,7 @@ class CreatePosts extends Component {
             <label>Title:</label>
             <div className="inputMargin">
               <input
+                className="inputSize"
                 type="text"
                 value={this.state.title}
                 onChange={this.handleTitleChange}
@@ -86,7 +89,9 @@ class CreatePosts extends Component {
               />
             </div>
             <div className="inputMargin">
-              <button type="submit">Submit</button>
+              <button className="submitBtn" type="submit">
+                Submit
+              </button>
             </div>
           </form>
         </div>
